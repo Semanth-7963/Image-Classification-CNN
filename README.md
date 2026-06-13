@@ -1,12 +1,12 @@
 # 🧠 Image Classification using CNN with Attention Visualization
 
-A deep learning project that developed an image classification system using Convolutional Neural Networks (CNN) with attention-based visualization, built with TensorFlow and Keras.
+A deep learning project that classifies images into 10 categories using a Convolutional Neural Network (CNN) with attention-based visualization, built with TensorFlow and Keras.
 
 ---
 
 ## 📌 Project Overview
 
-This project implements a CNN-based image classifier trained on the CIFAR-10 dataset. The model uses a convolutional stem, a residual trunk, and an attention pooling mechanism to classify images into 10 categories. A key feature of this project is the **attention map visualization** — showing which regions of an image the model focuses on when making predictions.
+This project implements a CNN-based image classifier trained on the CIFAR-10 dataset. The model uses a convolutional stem, a residual trunk, and an attention pooling mechanism to classify images. A key feature is the **attention map visualization** — showing which regions of an image the model focuses on when making predictions.
 
 ---
 
@@ -78,11 +78,7 @@ python convoltuion.py
 
 ## 🔍 Attention Visualization
 
-The model generates attention maps that highlight which parts of an image influenced the prediction. Below is an example output:
-
-| Original Image | Attention Map |
-|---|---|
-| Raw CIFAR-10 image | Heatmap overlay showing model focus areas |
+The model generates attention maps that highlight which parts of an image influenced the prediction. Bright yellow/orange areas show where the model focused most.
 
 This helps interpret **why** the model makes specific predictions — an important aspect of explainable AI.
 
@@ -97,16 +93,3 @@ This helps interpret **why** the model makes specific predictions — an importa
 | Optimizer | AdamW |
 | Learning Rate | 0.001 (with warm-up cosine schedule) |
 | Weight Decay | 0.0001 |
-
----
-
-## 👤 Author
-
-**Semanth Parvataneni**  
-Developed an image classification system using deep learning techniques as part of my ML portfolio.
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
